@@ -2,21 +2,12 @@ public class LastWordLength {
 
     public int lengthOfLastWord(String s) {
 
-        //Variables for our string array, length of s, index, and element of our array (i).
-        String[] sArray = new String[]{};
-        int sL = s.length();
-        int index = 0;
-        int i = 0;
+        //Split our string into words using " " as our delimiter, then we will
+        //get the last word of the array and return it's length.
+        String[] sArr = s.split(" ");
+        String lastWord = sArr[sArr.length - 1];
+        int length = lastWord.length();
 
-        //Base cases of 0 and 1.
-        if(sL == 0) { return 0; }
-        if(sL == 1) { return 1; }
-
-        //Iterate through our string, and store the last word in our StringBuilder.
-        while(index < sL){
-            sArray = s.split(" ");
-            index = index + sArray[i].length();
-        }
-        return sArray[sArray.length - 1].length();
+        return length;
     }
 }

@@ -1,7 +1,7 @@
 public class MainTester {
 
     public static void main(String[] args){
-        String s = "son,  of ,, **sa      hoodabooda ";
+        String s = "a";
         LastWordLength lol = new LastWordLength();
         lol.lengthOfLastWord(s);
     }
